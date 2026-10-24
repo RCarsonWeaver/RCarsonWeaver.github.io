@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carson Weaver</title>
+    <style>
+      :root {
+        --bg: #f4f7fb;
+        --panel: #ffffff;
+        --text: #1f2937;
+        --muted: #6b7280;
+        --accent: #2563eb;
+        --accent-dark: #1d4ed8;
+        --border: #e5e7eb;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 100%);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 32px 20px 64px;
+      }
+
+      header {
+        background: rgba(255, 255, 255, 0.8);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 20px 24px;
+        margin-bottom: 32px;
+        backdrop-filter: blur(6px);
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .brand {
+        font-size: 1.25rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .nav-links a {
+        color: var(--text);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .hero {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 48px 32px;
+        box-shadow: 0 10px 30px rgba(37, 99, 235, 0.08);
+      }
+
+      .eyebrow {
+        display: inline-block;
+        background: #dbeafe;
+        color: var(--accent-dark);
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 6px 10px;
+        border-radius: 999px;
+      }
+
+      h1 {
+        font-size: clamp(2.3rem, 5vw, 4rem);
+        line-height: 1.1;
+        margin: 18px 0 16px;
+      }
+
+      p {
+        color: var(--muted);
+        font-size: 1.05rem;
+        max-width: 650px;
+      }
+
+      .actions {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-top: 24px;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 12px 20px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 700;
+        transition: 0.2s ease;
+      }
+
+      .button.primary {
+        background: var(--accent);
+        color: white;
+      }
+
+      .button.primary:hover {
+        background: var(--accent-dark);
+      }
+
+      .button.secondary {
+        background: #eef2ff;
+        color: var(--accent-dark);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 24px;
+        margin-top: 40px;
+      }
+
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 24px;
+      }
+
+      .card h2 {
+        margin-top: 0;
+        font-size: 1.1rem;
+      }
+
+      footer {
+        text-align: center;
+        color: var(--muted);
+        margin-top: 40px;
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="brand">CARSON WEAVER</div>
+          <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" id="about">
+          <span class="eyebrow">Web Developer</span>
+          <h1>“A good scientist values criticism almost higher than friendship: no, in science criticism is the height and measure of friendship.”.</h1>
+          <p> - Francis Crick </p>
+        </section>
+
+        <section class="grid" id="work">
+          <article class="card">
+            <h2>Strategy</h2>
+            <p>Clear goals, focused messaging, and a strong digital foundation.</p>
+          </article>
+          <article class="card">
+            <h2>Design</h2>
+            <p>Clean interfaces, intuitive UX, and visual systems that feel polished.</p>
+          </article>
+          <article class="card">
+            <h2>Development</h2>
+            <p>Responsive, accessible builds that work beautifully across devices.</p>
+          </article>
+        </section>
+      </main>
+
+      <footer id="contact">
+        <p>© 2026 Carson Weaver</p>
+      </footer>
+    </div>
+  </body>
+</html>
