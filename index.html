@@ -4,196 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carson Weaver</title>
-    <style>
-      :root {
-        --bg: #f4f7fb;
-        --panel: #ffffff;
-        --text: #1f2937;
-        --muted: #6b7280;
-        --accent: #2563eb;
-        --accent-dark: #1d4ed8;
-        --border: #e5e7eb;
-      }
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="button_container">
+      <a href="about_me.html" class="nav-box">Research Statement</a>
+      <a href="Carsons_Resume.html" class="nav-box">Resume</a>
+      <a href="index.html" class="nav-box">Home</a>
+  </nav>
+  <h1 id="head">Robert Carson Weaver</h1>
+  <h2 class="quote">“It isn't necessary to seek out adventure. Opening to what is around you will produce the most extraordinary experiences.” -Edward B. Lewis</h2>
+  <div class="profile-section">
+    <div class="left-column">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>School Email: rcarsonw@unc.edu</p>
+        <p>Personal Email: robcarweaver@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/robertcarsonweaver" target="_blank">www.linkedin.com/in/robertcarsonweaver</a></p>
+        <p>Phone: (704) 678-7394</p>
+      </div>
 
-      * { box-sizing: border-box; }
-
-      body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 100%);
-        color: var(--text);
-        line-height: 1.6;
-      }
-
-      .container {
-        max-width: 960px;
-        margin: 0 auto;
-        padding: 32px 20px 64px;
-      }
-
-      header {
-        background: rgba(255, 255, 255, 0.8);
-        border: 1px solid var(--border);
-        border-radius: 16px;
-        padding: 20px 24px;
-        margin-bottom: 32px;
-        backdrop-filter: blur(6px);
-      }
-
-      nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 16px;
-        flex-wrap: wrap;
-      }
-
-      .brand {
-        font-size: 1.25rem;
-        font-weight: 700;
-        letter-spacing: 0.04em;
-      }
-
-      .nav-links {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-      }
-
-      .nav-links a {
-        color: var(--text);
-        text-decoration: none;
-        font-weight: 600;
-      }
-
-      .hero {
-        background: var(--panel);
-        border: 1px solid var(--border);
-        border-radius: 20px;
-        padding: 48px 32px;
-        box-shadow: 0 10px 30px rgba(37, 99, 235, 0.08);
-      }
-
-      .eyebrow {
-        display: inline-block;
-        background: #dbeafe;
-        color: var(--accent-dark);
-        font-size: 0.8rem;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        padding: 6px 10px;
-        border-radius: 999px;
-      }
-
-      h1 {
-        font-size: clamp(2.3rem, 5vw, 4rem);
-        line-height: 1.1;
-        margin: 18px 0 16px;
-      }
-
-      p {
-        color: var(--muted);
-        font-size: 1.05rem;
-        max-width: 650px;
-      }
-
-      .actions {
-        display: flex;
-        gap: 16px;
-        flex-wrap: wrap;
-        margin-top: 24px;
-      }
-
-      .button {
-        display: inline-block;
-        padding: 12px 20px;
-        border-radius: 10px;
-        text-decoration: none;
-        font-weight: 700;
-        transition: 0.2s ease;
-      }
-
-      .button.primary {
-        background: var(--accent);
-        color: white;
-      }
-
-      .button.primary:hover {
-        background: var(--accent-dark);
-      }
-
-      .button.secondary {
-        background: #eef2ff;
-        color: var(--accent-dark);
-      }
-
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 24px;
-        margin-top: 40px;
-      }
-
-      .card {
-        background: var(--panel);
-        border: 1px solid var(--border);
-        border-radius: 16px;
-        padding: 24px;
-      }
-
-      .card h2 {
-        margin-top: 0;
-        font-size: 1.1rem;
-      }
-
-      footer {
-        text-align: center;
-        color: var(--muted);
-        margin-top: 40px;
-        font-size: 0.95rem;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <nav>
-          <div class="brand">CARSON WEAVER</div>
-          <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#research">Research</a>
-            <a href="#contact">Contact</a>
-          </div>
-        </nav>
-      </header>
-
-      <main>
-        <section class="hero" id="about">
-          <span class="eyebrow">Web Developer</span>
-          <h1>“A good scientist values criticism almost higher than friendship: no, in science criticism is the height and measure of friendship.”.</h1>
-          <p> - Francis Crick </p>
-        </section>
-
-        <section class="grid" id="work">
-          <article class="card">
-            <h2>Strategy</h2>
-            <p>Clear goals, focused messaging, and a strong digital foundation.</p>
-          </article>
-          <article class="card">
-            <h2>Design</h2>
-            <p>Clean interfaces, intuitive UX, and visual systems that feel polished.</p>
-          </article>
-          <article class="card">
-            <h2>Development</h2>
-            <p>Responsive, accessible builds that work beautifully across devices.</p>
-          </article>
-        </section>
-      </main>
-
-      <footer id="contact">
-        <p>© 2026 Carson Weaver</p>
-      </footer>
+      <img src="images/carolina-photo.png" alt="Photo of Bell Tower at UNC" class="corner-photo">
     </div>
-  </body>
+    
+    <div class="third-box">
+      <p>Four years ago, after my eight-year-old younger sister felt sudden fatigue and immense thirst for 2 weeks, she was diagnosed with type one diabetes. The hospital admitted her that night with a blood sugar of 812, as she was in Diabetic ketoacidosis. When she returned home, I tried my best to be there for her; despite not knowing much about the disease, I felt a sense of responsibility as her 14-year-old brother. Annalyn needed to prick her finger in order to confirm the exactness of her CGM, but was afraid to do so I offered to prick my finger first to show her it did not hurt. I put my blood into the lancet device, where I discovered my glucose to be 500, rather than the normal 100-120 range. Though discovering I also had Type 1 Diabetes was influential on my health, I will never forget the happiness and pride I took in showing my little sister the finger prick would not hurt. I enjoyed making her feel safe during uncertainty. I knew then I wanted to become a doctor to make patients feel ensured in uncertainties the way I did Annalyn. As an ear nose and throat doctor, I could calm patients experiencing infections and guide them through any possible surgeries in order to make them feel as safe as possible through my assurances. </p>
+      <p> In high school, I participated in theatre as lead roles, supporting roles, and a backstage hand. No matter the role, the theatre community emphasized the value of teamwork. I learnt quickly that, for a show to go well, each stagehand and actor needs to know exactly what their next move is, and should even help facilitate other jobs by seeing who needs help. Even as an actor, I would help the stage director pull in and out fly rails, and would help other actors change during quick turnarounds. There was one other important lesson my eyes were opened to: empathy. When I performed as Laurie in “Little Women,” I saw in my own character how no person is one-sided through my research and exploration of the young man. Though Laurie was not the most likeable character, after I worked as his character I noticed his constant loyalty and growth towards the end of the play, mirroring how most people have empathy deep down that will not be available at first glance. Through Laurie and my experiences on the stage, I cemented my understanding of the importance of teamwork and reliable stagehands and further expanded my personal leniency with new faces as I remembered that no one can be read at first glance. Leniency and empathy are values I will hold close as I try to recreate the same sense of safety I gave my sister when I pursue the medical field. </p>
+      <p>At UNC, I am a member of Geoguessr club, the Cubing Club, Christians in Healthcare, and am a part of the Newman Church. With the Christians in Healthcare club, I have had opportunities to volunteer at Peds Playroom. I also presented in Sciathon-U, where my group suggested a solution to lithium mining by replacing lithium batteries with sodium batteries through the sodium gathered in salt water in order to additionally create clean drinking water. I plan to continue expanding my involvement at Carolina as I continue my Freshman Year. </p>
+    </div>
+
+     <div class="right-column">
+        <img src="images/5755A7F3-9BCB-4FBD-8E49-C92BE1F2A533.jpeg" alt="Photo of Carson Weaver" class="profile-pic">  
+      <div class="interests"> 
+        <h3> Interests </h3>
+        <p> Running</p>
+        <p> Speedcubing</p>
+        <p> Theatre</p>
+        <p> Playing the guitar</p>
+        <p> Collecting records</p>
+
+   </div>
+</body>  
 </html>

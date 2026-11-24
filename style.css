@@ -1,0 +1,157 @@
+#head {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color:#13294B; 
+  border-radius: 15px;
+  border: 2px solid #13294B;
+  background-color: #4B9CD3;
+  font:arial;
+  margin: 20px 30px; 
+  
+  
+}
+.button_container {
+    display:flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 14px 30px;
+    background-color: #fbebd8;
+    border-bottom: 2px solid #4B9CD3;
+    margin: 0 0 20px 0;
+}
+.nav-box {
+    color:#4B9CD3;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+    transition: 0.2s ease;
+    text-decoration: none;
+}
+.nav-box:hover {
+    color: #6c1da4;
+    text-shadow: #eef2f5; 
+    text-decoration: underline;
+}
+.quote {
+    
+    font-weight: normal;
+    line-height: 1.6;
+    font-style:arial;
+    color: #616264;
+    font-size: 1.58rem;
+
+    border-radius: 20px;
+    text-align:center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: 0 20px;
+    padding: 20px 30px;
+    background-color: #fbebd8;
+    box-shadow: 0 10px 25px rgba(75, 156, 211, 0.5);
+}
+
+.profile-pic{
+    width: 250px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 0;
+}
+.profile-section {
+  display: flex;
+  justify-content: space-between;  /* contact left, photo right */
+  align-items: stretch;         /* both start at the top */
+  margin: 20px 30px;
+  gap: 30px;
+}
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.corner-photo {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(75, 156, 211, 0.5);
+  flex: 1;  /* take up remaining space */
+}
+
+.third-box {
+    border-radius: 20px;
+    padding: 20px 40px;
+    background-color: #fbebd8;
+    box-shadow: 0 10px 25px rgba(75, 156, 211, 0.5);
+    font-weight: normal;
+}
+.contact-info {
+    border-radius: 20px;
+    padding: 20px 40px;
+    background-color: #fbebd8;
+    box-shadow: 0 10px 25px rgba(75, 156, 211, 0.5);
+    flex: 1;  /* take up remaining space */
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.interests {
+    border-radius: 20px;
+    padding: 20px 40px;
+    background-color: #fbebd8;
+    box-shadow: 0 10px 25px rgba(75, 156, 211, 0.5);
+    flex: 1;  /* take up remaining space */
+}
+
+body {
+  background-color: #cae7fb;
+  font-family: Georgia, "Times New Roman", serif;
+  margin: 0;
+  padding: 0;
+}
+.about-text {
+    border-radius: 20px;
+    padding: 20px 40px;
+    background-color: #fbebd8;
+    box-shadow: 0 10px 25px rgba(75, 156, 211, 0.5);
+    margin: 20px 30px;
+    margin-left: 0px;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    flex: 1;  /* take up remaining space */
+}
+
+.hamburger {
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+    margin: 20px 30px;
+    flex: 1;  /* take up remaining space */
+
+}
+
+.hamburger .about-text {
+  flex: 1;      
+  margin: 0;    /* removes the extra margin that made it sit lower than the photo */
+}
+
+.resume-box {
+  border-radius: 20px;
+  padding: 20px 40px;
+  background-color: #fbebd8;
+  box-shadow: 0 10px 25px rgba(75, 156, 211, 0.5);
+  margin: 20px 30px;
+  text-align: center;
+}
+
+.resume-box iframe {
+  width: 100%;
+  height: 1000px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
